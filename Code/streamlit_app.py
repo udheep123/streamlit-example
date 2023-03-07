@@ -6,6 +6,7 @@ st.set_page_config(layout="wide",page_title='Blend360 Timesheets')
 import datetime
 
 st.markdown("<h1 style='text-align: center; color: Black;'>AllStars Cohort10 Timesheets</h1>", unsafe_allow_html=True)
+st.image("/Input/Blend360logo.png")
 
 # col1, col2, col3 = st.columns([1,3,1])
 # with col1:
