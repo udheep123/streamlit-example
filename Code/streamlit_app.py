@@ -51,6 +51,8 @@ if inputdate>=datetime.date.today():
         timesheets_fulldata = pd.concat([timesheets_fulldata,edited_timesheet], ignore_index=True)
         timesheets_fulldata.reset_index(drop=True, inplace=True)
         timesheets_fulldata.to_csv("Timesheets_FullData.csv", index=False)
-
+        timesheets_fulldata.to_csv("New_file.csv", index=False)
+        st.markdown("<h6 style='text-align: center; color: Black;'>Timesheet Updated!</h1>", unsafe_allow_html=True)
+        
 else:
     st.markdown("<h3 style='text-align: center; color: Black;'>You cannot edit historical timesheets</h1>", unsafe_allow_html=True)
