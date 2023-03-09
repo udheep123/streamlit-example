@@ -65,7 +65,7 @@ col1, col2, col3 = st.columns([1,1,1])
 with col1:
     admin_id = st.text_input('', key='adminid', placeholder="Admin UserID")
 with col2:
-    admin_pass = st.text_input('', key='pass', placeholder="Password")
+    admin_pass = st.text_input('', key='pass', placeholder="Password", type="password")
 
 if (admin_id=='admin') & (admin_pass==password):
     options = st.multiselect('Select the employees',Employees_Names,Employees_Names)
