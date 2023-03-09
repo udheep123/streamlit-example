@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import base64
+import os
+password = os.environ['timesheetspass']
 
 st.set_page_config(layout="wide",page_title='Blend360 Timesheets')
 
@@ -65,7 +67,7 @@ with col1:
 with col2:
     admin_pass = st.text_input('', key='pass', placeholder="Password")
 
-if (admin_id=='admin') & (admin_pass=='Blend@123'):
+if (admin_id=='admin') & (admin_pass==password):
     options = st.multiselect('Select the employees',Employees_Names,Employees_Names)
     timesheets_fulldata_download = pd.DataFrame(pd.read_csv("Timesheets_FullData.csv"))
     timesheets_fulldata_download = timesheets_fulldata_download[timesheets_fulldata_download['Name'].isin(options)]
@@ -75,7 +77,7 @@ if (admin_id=='admin') & (admin_pass=='Blend@123'):
     linko= f'<a href="data:file/csv;base64,{b64}" download="Timesheets_Allstars.csv">Click here to download the input data</a>'
     st.markdown(linko, unsafe_allow_html=True)
 
-if ((admin_id!='admin') | (admin_pass!='Blend@123')) & (len(admin_id)>1):
+if ((admin_id!='admin') | (admin_pass!=password)) & (len(admin_id)>1):
     st.markdown("<h6 style='text-align: center; color: Black;'>Incorrect ID or Password</h1>", unsafe_allow_html=True)
 
 
