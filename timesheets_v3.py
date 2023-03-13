@@ -20,8 +20,8 @@ with col3:
     st.image("campaslogo.png")
 
 
-Employees_Names = ['Akshit Singhal','Harshavardhan Reddy G V','Lokesh R','Mehran Ahmad Shah','Atluri Sai Mahendra Reddy','Attar Mohammad Tameem','Bathula Vijaya Prasanth Kumar','Kumar Satyam','Sai Jyosthna Y','Teja Krishna Pulaganti','Akshay P B','Khushal Soni','Komati Sai Rakesh','Manoj P','Prudhviteja Cherukuri','Rahul Sheoran']
-Task_Names = ["Assignments", "Client Work", "Trainings", "Coding Challenge", "Center of Excellence", "Events", "Time Off", "Others"]
+Employees_Names = ['Aashima Jain','Akshit Singhal','Harshavardhan Reddy G V','Lokesh R','Mehran Ahmad Shah','Atluri Sai Mahendra Reddy','Attar Mohammad Tameem','Bathula Vijaya Prasanth Kumar','Kumar Satyam','Sai Jyosthna Y','Teja Krishna Pulaganti','Akshay P B','Khushal Soni','Komati Sai Rakesh','Manoj P','Prudhviteja Cherukuri','Rahul Sheoran']
+Task_Names = ["Assignments", "Client Work", "Trainings", "Coding Challenge", "Center of Excellence", "Certificcations", "Events", "Time Off", "Others"]
 
 col1, col2 = st.columns([3,2])
 with col1:
